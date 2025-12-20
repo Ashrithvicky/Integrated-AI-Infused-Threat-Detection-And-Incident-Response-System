@@ -1,0 +1,125 @@
+# services/consumer/consumer.py
+import os, json, time, uuid
+from kafka import KafkaConsumer
+from feature_builder import update_session, session_features
+import redis
+from db import init_db, add_alert
+import joblib
+import numpy as np
+from dotenv import load_dotenv
+# consumer.py (top)
+from services.online.online_learner import model as online_model
+# or from services.online.online_learner import feed_stream if you prefer a generator
+
+load_dotenv()
+
+from mysql_db import insert_or_update_event, ensure_db_schema
+# Ensure DB exists (optional)
+ensure_db_schema()
+
+
+KAFKA_BOOTSTRAP = os.getenv("KAFKA_BOOTSTRAP", "localhost:9092")
+TOPIC = "enriched-events"
+REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+MODEL_PATH = os.getenv("MODEL_PATH", "./services/ml/models/iforest_v1.pkl")
+
+# attempt to load model (if exists)
+clf = None
+try:
+    if os.path.exists(MODEL_PATH):
+        clf = joblib.load(MODEL_PATH)
+        print("Loaded model", MODEL_PATH)
+    else:
+        print("No model found at", MODEL_PATH)
+except Exception as e:
+    print("Model load error", e)
+
+r = redis.Redis(host=REDIS_HOST, port=6379, db=0)
+init_db()
+
+# kafka consumer only used if DEV_MODE=false; otherwise run_local_pipeline will call process_event()
+consumer = None
+try:
+    consumer = KafkaConsumer(TOPIC, bootstrap_servers=KAFKA_BOOTSTRAP,
+                         value_deserializer=lambda m: json.loads(m.decode("utf-8")),
+                         auto_offset_reset='earliest', consumer_timeout_ms=1000)
+    kafka_ok = True
+except Exception as e:
+    print("Kafka not available for consumer:", e)
+    kafka_ok = False
+def process_event(ev):
+    # existing code: update session, compute feats, compute score
+    session = update_session(r, ev)
+    feats = session_features(session)
+    vec = np.array([feats["count"], feats["unique_events"]]).reshape(1, -1)
+    score = 0.0
+    if clf is not None:
+        try:
+            raw = clf.decision_function(vec)[0]
+            score = float(-raw)
+        except Exception as e:
+            print("scoring error", e)
+
+    # label decision: mark as 'problem' if score > threshold
+    threshold = float(os.getenv("DETECTION_THRESHOLD", 0.7))
+    is_problem = score > threshold
+    label = "problem" if is_problem else "normal"
+
+    # build record for MySQL
+    rec = {
+        "id": ev.get("event_id") or str(uuid.uuid4()),
+        "event_id": ev.get("event_id"),
+        "source": ev.get("source"),
+        "entity_type": ev.get("entity_type"),
+        "entity_id": ev.get("entity_id"),
+        "event_type": ev.get("event_type"),
+        "raw": ev.get("raw"),
+        "normalized": ev,   # if ev is normalized/enriched in pipeline
+        "enriched": ev.get("ti") or {},
+        "template_id": ev.get("template_id"),
+        "ti_score": ev.get("ti", {}).get("ip_reputation"),
+        "detection_score": score,
+        "label": label,
+        "detected": is_problem,
+        "model_version": getattr(clf, "__version__", "iforest_v1"),
+        "alert_ts": None
+    }
+
+    # if it's a problem, set alert_ts to now (MySQL DATETIME)
+    if is_problem:
+        from datetime import datetime
+        rec["alert_ts"] = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+
+    # write to MySQL
+    try:
+        insert_or_update_event(rec)
+    except Exception as e:
+        print("MySQL write error:", e)
+
+    # existing logic: insert into SQLite alerts table for backward compatibility
+    if is_problem:
+        alert_id = rec["id"]
+        add_alert(alert_id, ev["entity_id"], score, json.dumps(ev))
+        print(f"ALERT {alert_id} {ev['entity_id']} {score}")
+
+def run_consumer(consume_fn=None):
+    print("Consumer started; kafka_ok:", kafka_ok)
+    if consume_fn:
+        for ev in consume_fn():
+            process_event(ev)
+    elif kafka_ok:
+        for msg in consumer:
+            process_event(msg.value)
+    else:
+        print("No consume function available")
+
+# after feats computed
+online_x = {"count": int(feats["count"]), "unique_events": int(feats["unique_events"])}
+try:
+    online_score = online_model.score_one(online_x)
+    online_model.learn_one(online_x)
+except Exception as e:
+    print("online learner error:", e)
+    online_score = 0.0
+# then include online_score in fusion
+

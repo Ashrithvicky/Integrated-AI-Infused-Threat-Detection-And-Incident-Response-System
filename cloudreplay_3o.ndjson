@@ -1,0 +1,9 @@
+# from project root
+python - <<'PY'
+import json
+arr = json.load(open("examples/cloudtrail_3o.json"))
+with open("data/cloudreplay_3o.ndjson","w") as out:
+    for obj in arr:
+        out.write(json.dumps(obj) + "\n")
+print("wrote", len(arr), "lines to data/cloudreplay_3o.ndjson")
+PY

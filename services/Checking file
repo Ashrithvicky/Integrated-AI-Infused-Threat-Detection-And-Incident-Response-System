@@ -1,0 +1,46 @@
+USE threatsys;
+
+-- Alerts (what /alerts returns)
+CREATE TABLE IF NOT EXISTS alerts (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  event_id VARCHAR(64) NOT NULL,
+  entity_id VARCHAR(255),
+  entity_type VARCHAR(64),
+  event_type VARCHAR(128),
+  source VARCHAR(64),
+  detection_score DOUBLE,
+  ti_score DOUBLE,
+  correlation_score DOUBLE,
+  label VARCHAR(32),
+  alert_ts DATETIME,
+  explain JSON,
+  explain_shap JSON,
+  raw JSON,
+  normalized JSON,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  KEY idx_event_id (event_id)
+);
+
+0	12	09:58:06	CREATE TABLE IF NOT EXISTS alerts (
+   id BIGINT AUTO_INCREMENT PRIMARY KEY,
+   event_id VARCHAR(64) NOT NULL,
+   entity_id VARCHAR(255),
+   entity_type VARCHAR(64),
+   event_type VARCHAR(128),
+   source VARCHAR(64),
+   detection_score DOUBLE,
+   ti_score DOUBLE,
+   correlation_score DOUBLE,
+   label VARCHAR(32),
+   alert_ts DATETIME,
+   explain JSON,
+   explain_shap JSON,
+   raw JSON,
+   normalized JSON,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   KEY idx_event_id (event_id)
+ )	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'explain JSON,
+   explain_shap JSON,
+   raw JSON,
+   normalized JSON,
+   created_at T' at line 13	0.000 sec

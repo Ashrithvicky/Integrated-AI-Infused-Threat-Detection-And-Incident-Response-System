@@ -1,0 +1,62 @@
+{
+  "drift_id": "drift-20251126T173828",
+  "timestamp": "2025-11-26T17:38:28.991031Z",
+  "changed": false,
+  "diff": {},
+  "prev_snapshot": {
+    "snapshot_ts": "2025-11-26T17:37:58.975981Z",
+    "source": "examples/config_example.json",
+    "content": {
+      "version": "1.0",
+      "iam_policy": {
+        "Allow": [
+          "s3:GetObject",
+          "ec2:DescribeInstances"
+        ],
+        "Deny": [
+          "iam:CreateUser"
+        ]
+      },
+      "security_groups": [
+        {
+          "name": "default",
+          "inbound": [
+            "22/tcp",
+            "443/tcp"
+          ],
+          "outbound": [
+            "80/tcp"
+          ]
+        }
+      ]
+    }
+  },
+  "new_snapshot": {
+    "snapshot_ts": "2025-11-26T17:38:28.982003Z",
+    "source": "examples/config_example.json",
+    "content": {
+      "version": "1.0",
+      "iam_policy": {
+        "Allow": [
+          "s3:GetObject",
+          "ec2:DescribeInstances"
+        ],
+        "Deny": [
+          "iam:CreateUser"
+        ]
+      },
+      "security_groups": [
+        {
+          "name": "default",
+          "inbound": [
+            "22/tcp",
+            "443/tcp"
+          ],
+          "outbound": [
+            "80/tcp"
+          ]
+        }
+      ]
+    }
+  }
+}

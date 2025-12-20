@@ -1,0 +1,37 @@
+{
+  "drift_id": "drift-20251125T162150",
+  "timestamp": "2025-11-25T16:21:50.418258Z",
+  "changed": true,
+  "diff": {
+    "dictionary_item_added": "[root['version'], root['iam_policy'], root['security_groups']]"
+  },
+  "prev_snapshot": null,
+  "new_snapshot": {
+    "snapshot_ts": "2025-11-25T16:21:50.418258Z",
+    "source": "examples/config_example.json",
+    "content": {
+      "version": "1.0",
+      "iam_policy": {
+        "Allow": [
+          "s3:GetObject",
+          "ec2:DescribeInstances"
+        ],
+        "Deny": [
+          "iam:CreateUser"
+        ]
+      },
+      "security_groups": [
+        {
+          "name": "default",
+          "inbound": [
+            "22/tcp",
+            "443/tcp"
+          ],
+          "outbound": [
+            "80/tcp"
+          ]
+        }
+      ]
+    }
+  }
+}

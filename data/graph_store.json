@@ -1,0 +1,261 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "event_type",
+      "id": "ConsoleLogin"
+    },
+    {
+      "id": "alice"
+    },
+    {
+      "type": "event_type",
+      "id": "ListBuckets"
+    },
+    {
+      "type": "event_type",
+      "id": "CreateUser"
+    },
+    {
+      "type": "event_type",
+      "id": "AttachRolePolicy"
+    },
+    {
+      "type": "event_type",
+      "id": "PutBucketPolicy"
+    },
+    {
+      "type": "event_type",
+      "id": "DeleteBucket"
+    },
+    {
+      "id": "bob"
+    },
+    {
+      "type": "event_type",
+      "id": "GetObject"
+    },
+    {
+      "type": "event_type",
+      "id": "RunInstances"
+    },
+    {
+      "id": "deploy_bot"
+    },
+    {
+      "type": "event_type",
+      "id": "AuthorizeSecurityGroupIngress"
+    },
+    {
+      "id": "arn:aws:sts::123:assumed-role/AdminRole/alice"
+    },
+    {
+      "type": "event_type",
+      "id": "PutObject"
+    },
+    {
+      "id": "charlie"
+    },
+    {
+      "type": "event_type",
+      "id": "AssumeRole"
+    },
+    {
+      "id": "dan"
+    },
+    {
+      "type": "event_type",
+      "id": "CreatePolicy"
+    },
+    {
+      "id": "eve"
+    },
+    {
+      "id": "frank"
+    },
+    {
+      "type": "event_type",
+      "id": "StopInstances"
+    },
+    {
+      "id": "grace"
+    },
+    {
+      "type": "event_type",
+      "id": "PutBucketAcl"
+    },
+    {
+      "id": "harry"
+    },
+    {
+      "type": "event_type",
+      "id": "UpdateAssumeRolePolicy"
+    },
+    {
+      "id": "local_admin"
+    },
+    {
+      "id": "guest"
+    }
+  ],
+  "links": [
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "ListBuckets"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "CreateUser"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "AttachRolePolicy"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "PutBucketPolicy"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "DeleteBucket"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "UpdateAssumeRolePolicy"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "alice",
+      "target": "GetObject"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "bob",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "bob",
+      "target": "GetObject"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "deploy_bot",
+      "target": "RunInstances"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "deploy_bot",
+      "target": "AuthorizeSecurityGroupIngress"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "arn:aws:sts::123:assumed-role/AdminRole/alice",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "arn:aws:sts::123:assumed-role/AdminRole/alice",
+      "target": "PutObject"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "charlie",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "dan",
+      "target": "AssumeRole"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "dan",
+      "target": "CreatePolicy"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "eve",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "frank",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "frank",
+      "target": "StopInstances"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "grace",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "grace",
+      "target": "PutBucketAcl"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "harry",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "harry",
+      "target": "GetObject"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "local_admin",
+      "target": "ConsoleLogin"
+    },
+    {
+      "type": "did_event",
+      "ts": null,
+      "source": "guest",
+      "target": "ConsoleLogin"
+    }
+  ]
+}

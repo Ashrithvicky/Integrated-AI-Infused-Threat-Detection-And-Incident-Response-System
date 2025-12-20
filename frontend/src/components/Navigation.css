@@ -1,0 +1,90 @@
+/* src/components/Navigation.css */
+.navigation {
+  background: rgba(10, 15, 30, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  color: #a0a0b0;
+  margin-left: 2.8rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #a0a0b0;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgba(100, 150, 255, 0.1);
+}
+
+.nav-link.active {
+  color: white;
+  background: rgba(67, 97, 238, 0.2);
+  border: 1px solid rgba(100, 150, 255, 0.3);
+}
+
+.nav-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #06d6a0;
+  font-size: 0.9rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #06d6a0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #06d6a0;
+}

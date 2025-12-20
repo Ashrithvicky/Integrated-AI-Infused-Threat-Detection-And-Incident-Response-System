@@ -1,0 +1,1118 @@
+{
+  "drift_id": "drift-20251126T175435",
+  "timestamp": "2025-11-26T17:54:35.678951Z",
+  "changed": true,
+  "diff": {
+    "type_changes": {
+      "root": {
+        "old_type": "<class 'NoneType'>",
+        "new_type": "<class 'dict'>",
+        "old_value": null,
+        "new_value": {
+          "version": "1.0",
+          "iam_policy": {
+            "Allow": [
+              "s3:GetObject",
+              "ec2:DescribeInstances"
+            ],
+            "Deny": [
+              "iam:CreateUser"
+            ]
+          },
+          "security_groups": [
+            {
+              "name": "default",
+              "inbound": [
+                "22/tcp",
+                "443/tcp"
+              ],
+              "outbound": [
+                "80/tcp"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "prev_snapshot": {
+    "drift_id": "drift-20251126T175356",
+    "timestamp": "2025-11-26T17:53:56.876197Z",
+    "changed": true,
+    "diff": {
+      "type_changes": {
+        "root": {
+          "old_type": "<class 'NoneType'>",
+          "new_type": "<class 'dict'>",
+          "old_value": null,
+          "new_value": {
+            "version": "1.0",
+            "iam_policy": {
+              "Allow": [
+                "s3:GetObject",
+                "ec2:DescribeInstances"
+              ],
+              "Deny": [
+                "iam:CreateUser"
+              ]
+            },
+            "security_groups": [
+              {
+                "name": "default",
+                "inbound": [
+                  "22/tcp",
+                  "443/tcp"
+                ],
+                "outbound": [
+                  "80/tcp"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "prev_snapshot": {
+      "drift_id": "drift-20251126T175318",
+      "timestamp": "2025-11-26T17:53:18.082071Z",
+      "changed": true,
+      "diff": {
+        "type_changes": {
+          "root": {
+            "old_type": "<class 'NoneType'>",
+            "new_type": "<class 'dict'>",
+            "old_value": null,
+            "new_value": {
+              "version": "1.0",
+              "iam_policy": {
+                "Allow": [
+                  "s3:GetObject",
+                  "ec2:DescribeInstances"
+                ],
+                "Deny": [
+                  "iam:CreateUser"
+                ]
+              },
+              "security_groups": [
+                {
+                  "name": "default",
+                  "inbound": [
+                    "22/tcp",
+                    "443/tcp"
+                  ],
+                  "outbound": [
+                    "80/tcp"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "prev_snapshot": {
+        "drift_id": "drift-20251126T175239",
+        "timestamp": "2025-11-26T17:52:39.205217Z",
+        "changed": true,
+        "diff": {
+          "type_changes": {
+            "root": {
+              "old_type": "<class 'NoneType'>",
+              "new_type": "<class 'dict'>",
+              "old_value": null,
+              "new_value": {
+                "version": "1.0",
+                "iam_policy": {
+                  "Allow": [
+                    "s3:GetObject",
+                    "ec2:DescribeInstances"
+                  ],
+                  "Deny": [
+                    "iam:CreateUser"
+                  ]
+                },
+                "security_groups": [
+                  {
+                    "name": "default",
+                    "inbound": [
+                      "22/tcp",
+                      "443/tcp"
+                    ],
+                    "outbound": [
+                      "80/tcp"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "prev_snapshot": {
+          "drift_id": "drift-20251126T175200",
+          "timestamp": "2025-11-26T17:52:00.360486Z",
+          "changed": true,
+          "diff": {
+            "type_changes": {
+              "root": {
+                "old_type": "<class 'NoneType'>",
+                "new_type": "<class 'dict'>",
+                "old_value": null,
+                "new_value": {
+                  "version": "1.0",
+                  "iam_policy": {
+                    "Allow": [
+                      "s3:GetObject",
+                      "ec2:DescribeInstances"
+                    ],
+                    "Deny": [
+                      "iam:CreateUser"
+                    ]
+                  },
+                  "security_groups": [
+                    {
+                      "name": "default",
+                      "inbound": [
+                        "22/tcp",
+                        "443/tcp"
+                      ],
+                      "outbound": [
+                        "80/tcp"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "prev_snapshot": {
+            "drift_id": "drift-20251126T175121",
+            "timestamp": "2025-11-26T17:51:21.558010Z",
+            "changed": true,
+            "diff": {
+              "type_changes": {
+                "root": {
+                  "old_type": "<class 'NoneType'>",
+                  "new_type": "<class 'dict'>",
+                  "old_value": null,
+                  "new_value": {
+                    "version": "1.0",
+                    "iam_policy": {
+                      "Allow": [
+                        "s3:GetObject",
+                        "ec2:DescribeInstances"
+                      ],
+                      "Deny": [
+                        "iam:CreateUser"
+                      ]
+                    },
+                    "security_groups": [
+                      {
+                        "name": "default",
+                        "inbound": [
+                          "22/tcp",
+                          "443/tcp"
+                        ],
+                        "outbound": [
+                          "80/tcp"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "prev_snapshot": {
+              "drift_id": "drift-20251126T175042",
+              "timestamp": "2025-11-26T17:50:42.672616Z",
+              "changed": true,
+              "diff": {
+                "type_changes": {
+                  "root": {
+                    "old_type": "<class 'NoneType'>",
+                    "new_type": "<class 'dict'>",
+                    "old_value": null,
+                    "new_value": {
+                      "version": "1.0",
+                      "iam_policy": {
+                        "Allow": [
+                          "s3:GetObject",
+                          "ec2:DescribeInstances"
+                        ],
+                        "Deny": [
+                          "iam:CreateUser"
+                        ]
+                      },
+                      "security_groups": [
+                        {
+                          "name": "default",
+                          "inbound": [
+                            "22/tcp",
+                            "443/tcp"
+                          ],
+                          "outbound": [
+                            "80/tcp"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "prev_snapshot": {
+                "drift_id": "drift-20251126T175003",
+                "timestamp": "2025-11-26T17:50:03.733237Z",
+                "changed": true,
+                "diff": {
+                  "type_changes": {
+                    "root": {
+                      "old_type": "<class 'NoneType'>",
+                      "new_type": "<class 'dict'>",
+                      "old_value": null,
+                      "new_value": {
+                        "version": "1.0",
+                        "iam_policy": {
+                          "Allow": [
+                            "s3:GetObject",
+                            "ec2:DescribeInstances"
+                          ],
+                          "Deny": [
+                            "iam:CreateUser"
+                          ]
+                        },
+                        "security_groups": [
+                          {
+                            "name": "default",
+                            "inbound": [
+                              "22/tcp",
+                              "443/tcp"
+                            ],
+                            "outbound": [
+                              "80/tcp"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "prev_snapshot": {
+                  "drift_id": "drift-20251126T174924",
+                  "timestamp": "2025-11-26T17:49:24.890613Z",
+                  "changed": true,
+                  "diff": {
+                    "type_changes": {
+                      "root": {
+                        "old_type": "<class 'NoneType'>",
+                        "new_type": "<class 'dict'>",
+                        "old_value": null,
+                        "new_value": {
+                          "version": "1.0",
+                          "iam_policy": {
+                            "Allow": [
+                              "s3:GetObject",
+                              "ec2:DescribeInstances"
+                            ],
+                            "Deny": [
+                              "iam:CreateUser"
+                            ]
+                          },
+                          "security_groups": [
+                            {
+                              "name": "default",
+                              "inbound": [
+                                "22/tcp",
+                                "443/tcp"
+                              ],
+                              "outbound": [
+                                "80/tcp"
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "prev_snapshot": {
+                    "drift_id": "drift-20251126T174846",
+                    "timestamp": "2025-11-26T17:48:46.015136Z",
+                    "changed": true,
+                    "diff": {
+                      "type_changes": {
+                        "root": {
+                          "old_type": "<class 'NoneType'>",
+                          "new_type": "<class 'dict'>",
+                          "old_value": null,
+                          "new_value": {
+                            "version": "1.0",
+                            "iam_policy": {
+                              "Allow": [
+                                "s3:GetObject",
+                                "ec2:DescribeInstances"
+                              ],
+                              "Deny": [
+                                "iam:CreateUser"
+                              ]
+                            },
+                            "security_groups": [
+                              {
+                                "name": "default",
+                                "inbound": [
+                                  "22/tcp",
+                                  "443/tcp"
+                                ],
+                                "outbound": [
+                                  "80/tcp"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "prev_snapshot": {
+                      "drift_id": "drift-20251126T174807",
+                      "timestamp": "2025-11-26T17:48:07.135200Z",
+                      "changed": true,
+                      "diff": {
+                        "type_changes": {
+                          "root": {
+                            "old_type": "<class 'NoneType'>",
+                            "new_type": "<class 'dict'>",
+                            "old_value": null,
+                            "new_value": {
+                              "version": "1.0",
+                              "iam_policy": {
+                                "Allow": [
+                                  "s3:GetObject",
+                                  "ec2:DescribeInstances"
+                                ],
+                                "Deny": [
+                                  "iam:CreateUser"
+                                ]
+                              },
+                              "security_groups": [
+                                {
+                                  "name": "default",
+                                  "inbound": [
+                                    "22/tcp",
+                                    "443/tcp"
+                                  ],
+                                  "outbound": [
+                                    "80/tcp"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "prev_snapshot": {
+                        "drift_id": "drift-20251126T174728",
+                        "timestamp": "2025-11-26T17:47:28.256235Z",
+                        "changed": true,
+                        "diff": {
+                          "type_changes": {
+                            "root": {
+                              "old_type": "<class 'NoneType'>",
+                              "new_type": "<class 'dict'>",
+                              "old_value": null,
+                              "new_value": {
+                                "version": "1.0",
+                                "iam_policy": {
+                                  "Allow": [
+                                    "s3:GetObject",
+                                    "ec2:DescribeInstances"
+                                  ],
+                                  "Deny": [
+                                    "iam:CreateUser"
+                                  ]
+                                },
+                                "security_groups": [
+                                  {
+                                    "name": "default",
+                                    "inbound": [
+                                      "22/tcp",
+                                      "443/tcp"
+                                    ],
+                                    "outbound": [
+                                      "80/tcp"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "prev_snapshot": {
+                          "drift_id": "drift-20251126T174649",
+                          "timestamp": "2025-11-26T17:46:49.411403Z",
+                          "changed": true,
+                          "diff": {
+                            "type_changes": {
+                              "root": {
+                                "old_type": "<class 'NoneType'>",
+                                "new_type": "<class 'dict'>",
+                                "old_value": null,
+                                "new_value": {
+                                  "version": "1.0",
+                                  "iam_policy": {
+                                    "Allow": [
+                                      "s3:GetObject",
+                                      "ec2:DescribeInstances"
+                                    ],
+                                    "Deny": [
+                                      "iam:CreateUser"
+                                    ]
+                                  },
+                                  "security_groups": [
+                                    {
+                                      "name": "default",
+                                      "inbound": [
+                                        "22/tcp",
+                                        "443/tcp"
+                                      ],
+                                      "outbound": [
+                                        "80/tcp"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "prev_snapshot": {
+                            "drift_id": "drift-20251126T174610",
+                            "timestamp": "2025-11-26T17:46:10.502997Z",
+                            "changed": true,
+                            "diff": {
+                              "type_changes": {
+                                "root": {
+                                  "old_type": "<class 'NoneType'>",
+                                  "new_type": "<class 'dict'>",
+                                  "old_value": null,
+                                  "new_value": {
+                                    "version": "1.0",
+                                    "iam_policy": {
+                                      "Allow": [
+                                        "s3:GetObject",
+                                        "ec2:DescribeInstances"
+                                      ],
+                                      "Deny": [
+                                        "iam:CreateUser"
+                                      ]
+                                    },
+                                    "security_groups": [
+                                      {
+                                        "name": "default",
+                                        "inbound": [
+                                          "22/tcp",
+                                          "443/tcp"
+                                        ],
+                                        "outbound": [
+                                          "80/tcp"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            },
+                            "prev_snapshot": {
+                              "drift_id": "drift-20251126T174531",
+                              "timestamp": "2025-11-26T17:45:31.568687Z",
+                              "changed": true,
+                              "diff": {
+                                "type_changes": {
+                                  "root": {
+                                    "old_type": "<class 'NoneType'>",
+                                    "new_type": "<class 'dict'>",
+                                    "old_value": null,
+                                    "new_value": {
+                                      "version": "1.0",
+                                      "iam_policy": {
+                                        "Allow": [
+                                          "s3:GetObject",
+                                          "ec2:DescribeInstances"
+                                        ],
+                                        "Deny": [
+                                          "iam:CreateUser"
+                                        ]
+                                      },
+                                      "security_groups": [
+                                        {
+                                          "name": "default",
+                                          "inbound": [
+                                            "22/tcp",
+                                            "443/tcp"
+                                          ],
+                                          "outbound": [
+                                            "80/tcp"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              "prev_snapshot": {
+                                "drift_id": "drift-20251126T174452",
+                                "timestamp": "2025-11-26T17:44:52.430047Z",
+                                "changed": true,
+                                "diff": {
+                                  "type_changes": {
+                                    "root": {
+                                      "old_type": "<class 'NoneType'>",
+                                      "new_type": "<class 'dict'>",
+                                      "old_value": null,
+                                      "new_value": {
+                                        "version": "1.0",
+                                        "iam_policy": {
+                                          "Allow": [
+                                            "s3:GetObject",
+                                            "ec2:DescribeInstances"
+                                          ],
+                                          "Deny": [
+                                            "iam:CreateUser"
+                                          ]
+                                        },
+                                        "security_groups": [
+                                          {
+                                            "name": "default",
+                                            "inbound": [
+                                              "22/tcp",
+                                              "443/tcp"
+                                            ],
+                                            "outbound": [
+                                              "80/tcp"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                },
+                                "prev_snapshot": {
+                                  "drift_id": "drift-20251126T174422",
+                                  "timestamp": "2025-11-26T17:44:22.426802Z",
+                                  "changed": false,
+                                  "diff": {},
+                                  "prev_snapshot": {
+                                    "snapshot_ts": "2025-11-26T17:41:59.055799Z",
+                                    "source": "examples/config_example.json",
+                                    "content": {
+                                      "version": "1.0",
+                                      "iam_policy": {
+                                        "Allow": [
+                                          "s3:GetObject",
+                                          "ec2:DescribeInstances"
+                                        ],
+                                        "Deny": [
+                                          "iam:CreateUser"
+                                        ]
+                                      },
+                                      "security_groups": [
+                                        {
+                                          "name": "default",
+                                          "inbound": [
+                                            "22/tcp",
+                                            "443/tcp"
+                                          ],
+                                          "outbound": [
+                                            "80/tcp"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "new_snapshot": {
+                                    "snapshot_ts": "2025-11-26T17:44:22.410913Z",
+                                    "source": "examples/config_example.json",
+                                    "content": {
+                                      "version": "1.0",
+                                      "iam_policy": {
+                                        "Allow": [
+                                          "s3:GetObject",
+                                          "ec2:DescribeInstances"
+                                        ],
+                                        "Deny": [
+                                          "iam:CreateUser"
+                                        ]
+                                      },
+                                      "security_groups": [
+                                        {
+                                          "name": "default",
+                                          "inbound": [
+                                            "22/tcp",
+                                            "443/tcp"
+                                          ],
+                                          "outbound": [
+                                            "80/tcp"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "new_snapshot": {
+                                  "snapshot_ts": "2025-11-26T17:44:52.429035Z",
+                                  "source": "examples/config_example.json",
+                                  "content": {
+                                    "version": "1.0",
+                                    "iam_policy": {
+                                      "Allow": [
+                                        "s3:GetObject",
+                                        "ec2:DescribeInstances"
+                                      ],
+                                      "Deny": [
+                                        "iam:CreateUser"
+                                      ]
+                                    },
+                                    "security_groups": [
+                                      {
+                                        "name": "default",
+                                        "inbound": [
+                                          "22/tcp",
+                                          "443/tcp"
+                                        ],
+                                        "outbound": [
+                                          "80/tcp"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              "new_snapshot": {
+                                "snapshot_ts": "2025-11-26T17:45:31.566914Z",
+                                "source": "examples/config_example.json",
+                                "content": {
+                                  "version": "1.0",
+                                  "iam_policy": {
+                                    "Allow": [
+                                      "s3:GetObject",
+                                      "ec2:DescribeInstances"
+                                    ],
+                                    "Deny": [
+                                      "iam:CreateUser"
+                                    ]
+                                  },
+                                  "security_groups": [
+                                    {
+                                      "name": "default",
+                                      "inbound": [
+                                        "22/tcp",
+                                        "443/tcp"
+                                      ],
+                                      "outbound": [
+                                        "80/tcp"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "new_snapshot": {
+                              "snapshot_ts": "2025-11-26T17:46:10.500969Z",
+                              "source": "examples/config_example.json",
+                              "content": {
+                                "version": "1.0",
+                                "iam_policy": {
+                                  "Allow": [
+                                    "s3:GetObject",
+                                    "ec2:DescribeInstances"
+                                  ],
+                                  "Deny": [
+                                    "iam:CreateUser"
+                                  ]
+                                },
+                                "security_groups": [
+                                  {
+                                    "name": "default",
+                                    "inbound": [
+                                      "22/tcp",
+                                      "443/tcp"
+                                    ],
+                                    "outbound": [
+                                      "80/tcp"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "new_snapshot": {
+                            "snapshot_ts": "2025-11-26T17:46:49.411403Z",
+                            "source": "examples/config_example.json",
+                            "content": {
+                              "version": "1.0",
+                              "iam_policy": {
+                                "Allow": [
+                                  "s3:GetObject",
+                                  "ec2:DescribeInstances"
+                                ],
+                                "Deny": [
+                                  "iam:CreateUser"
+                                ]
+                              },
+                              "security_groups": [
+                                {
+                                  "name": "default",
+                                  "inbound": [
+                                    "22/tcp",
+                                    "443/tcp"
+                                  ],
+                                  "outbound": [
+                                    "80/tcp"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        "new_snapshot": {
+                          "snapshot_ts": "2025-11-26T17:47:28.255148Z",
+                          "source": "examples/config_example.json",
+                          "content": {
+                            "version": "1.0",
+                            "iam_policy": {
+                              "Allow": [
+                                "s3:GetObject",
+                                "ec2:DescribeInstances"
+                              ],
+                              "Deny": [
+                                "iam:CreateUser"
+                              ]
+                            },
+                            "security_groups": [
+                              {
+                                "name": "default",
+                                "inbound": [
+                                  "22/tcp",
+                                  "443/tcp"
+                                ],
+                                "outbound": [
+                                  "80/tcp"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "new_snapshot": {
+                        "snapshot_ts": "2025-11-26T17:48:07.133679Z",
+                        "source": "examples/config_example.json",
+                        "content": {
+                          "version": "1.0",
+                          "iam_policy": {
+                            "Allow": [
+                              "s3:GetObject",
+                              "ec2:DescribeInstances"
+                            ],
+                            "Deny": [
+                              "iam:CreateUser"
+                            ]
+                          },
+                          "security_groups": [
+                            {
+                              "name": "default",
+                              "inbound": [
+                                "22/tcp",
+                                "443/tcp"
+                              ],
+                              "outbound": [
+                                "80/tcp"
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "new_snapshot": {
+                      "snapshot_ts": "2025-11-26T17:48:46.015136Z",
+                      "source": "examples/config_example.json",
+                      "content": {
+                        "version": "1.0",
+                        "iam_policy": {
+                          "Allow": [
+                            "s3:GetObject",
+                            "ec2:DescribeInstances"
+                          ],
+                          "Deny": [
+                            "iam:CreateUser"
+                          ]
+                        },
+                        "security_groups": [
+                          {
+                            "name": "default",
+                            "inbound": [
+                              "22/tcp",
+                              "443/tcp"
+                            ],
+                            "outbound": [
+                              "80/tcp"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "new_snapshot": {
+                    "snapshot_ts": "2025-11-26T17:49:24.890613Z",
+                    "source": "examples/config_example.json",
+                    "content": {
+                      "version": "1.0",
+                      "iam_policy": {
+                        "Allow": [
+                          "s3:GetObject",
+                          "ec2:DescribeInstances"
+                        ],
+                        "Deny": [
+                          "iam:CreateUser"
+                        ]
+                      },
+                      "security_groups": [
+                        {
+                          "name": "default",
+                          "inbound": [
+                            "22/tcp",
+                            "443/tcp"
+                          ],
+                          "outbound": [
+                            "80/tcp"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                "new_snapshot": {
+                  "snapshot_ts": "2025-11-26T17:50:03.731226Z",
+                  "source": "examples/config_example.json",
+                  "content": {
+                    "version": "1.0",
+                    "iam_policy": {
+                      "Allow": [
+                        "s3:GetObject",
+                        "ec2:DescribeInstances"
+                      ],
+                      "Deny": [
+                        "iam:CreateUser"
+                      ]
+                    },
+                    "security_groups": [
+                      {
+                        "name": "default",
+                        "inbound": [
+                          "22/tcp",
+                          "443/tcp"
+                        ],
+                        "outbound": [
+                          "80/tcp"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "new_snapshot": {
+                "snapshot_ts": "2025-11-26T17:50:42.671428Z",
+                "source": "examples/config_example.json",
+                "content": {
+                  "version": "1.0",
+                  "iam_policy": {
+                    "Allow": [
+                      "s3:GetObject",
+                      "ec2:DescribeInstances"
+                    ],
+                    "Deny": [
+                      "iam:CreateUser"
+                    ]
+                  },
+                  "security_groups": [
+                    {
+                      "name": "default",
+                      "inbound": [
+                        "22/tcp",
+                        "443/tcp"
+                      ],
+                      "outbound": [
+                        "80/tcp"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "new_snapshot": {
+              "snapshot_ts": "2025-11-26T17:51:21.557010Z",
+              "source": "examples/config_example.json",
+              "content": {
+                "version": "1.0",
+                "iam_policy": {
+                  "Allow": [
+                    "s3:GetObject",
+                    "ec2:DescribeInstances"
+                  ],
+                  "Deny": [
+                    "iam:CreateUser"
+                  ]
+                },
+                "security_groups": [
+                  {
+                    "name": "default",
+                    "inbound": [
+                      "22/tcp",
+                      "443/tcp"
+                    ],
+                    "outbound": [
+                      "80/tcp"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "new_snapshot": {
+            "snapshot_ts": "2025-11-26T17:52:00.360486Z",
+            "source": "examples/config_example.json",
+            "content": {
+              "version": "1.0",
+              "iam_policy": {
+                "Allow": [
+                  "s3:GetObject",
+                  "ec2:DescribeInstances"
+                ],
+                "Deny": [
+                  "iam:CreateUser"
+                ]
+              },
+              "security_groups": [
+                {
+                  "name": "default",
+                  "inbound": [
+                    "22/tcp",
+                    "443/tcp"
+                  ],
+                  "outbound": [
+                    "80/tcp"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "new_snapshot": {
+          "snapshot_ts": "2025-11-26T17:52:39.205217Z",
+          "source": "examples/config_example.json",
+          "content": {
+            "version": "1.0",
+            "iam_policy": {
+              "Allow": [
+                "s3:GetObject",
+                "ec2:DescribeInstances"
+              ],
+              "Deny": [
+                "iam:CreateUser"
+              ]
+            },
+            "security_groups": [
+              {
+                "name": "default",
+                "inbound": [
+                  "22/tcp",
+                  "443/tcp"
+                ],
+                "outbound": [
+                  "80/tcp"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "new_snapshot": {
+        "snapshot_ts": "2025-11-26T17:53:18.079496Z",
+        "source": "examples/config_example.json",
+        "content": {
+          "version": "1.0",
+          "iam_policy": {
+            "Allow": [
+              "s3:GetObject",
+              "ec2:DescribeInstances"
+            ],
+            "Deny": [
+              "iam:CreateUser"
+            ]
+          },
+          "security_groups": [
+            {
+              "name": "default",
+              "inbound": [
+                "22/tcp",
+                "443/tcp"
+              ],
+              "outbound": [
+                "80/tcp"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "new_snapshot": {
+      "snapshot_ts": "2025-11-26T17:53:56.874664Z",
+      "source": "examples/config_example.json",
+      "content": {
+        "version": "1.0",
+        "iam_policy": {
+          "Allow": [
+            "s3:GetObject",
+            "ec2:DescribeInstances"
+          ],
+          "Deny": [
+            "iam:CreateUser"
+          ]
+        },
+        "security_groups": [
+          {
+            "name": "default",
+            "inbound": [
+              "22/tcp",
+              "443/tcp"
+            ],
+            "outbound": [
+              "80/tcp"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "new_snapshot": {
+    "snapshot_ts": "2025-11-26T17:54:35.677949Z",
+    "source": "examples/config_example.json",
+    "content": {
+      "version": "1.0",
+      "iam_policy": {
+        "Allow": [
+          "s3:GetObject",
+          "ec2:DescribeInstances"
+        ],
+        "Deny": [
+          "iam:CreateUser"
+        ]
+      },
+      "security_groups": [
+        {
+          "name": "default",
+          "inbound": [
+            "22/tcp",
+            "443/tcp"
+          ],
+          "outbound": [
+            "80/tcp"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "snapshot_ts": "2025-12-16T10:18:10.509474Z",
+  "source": "examples/config_example.json",
+  "content": {
+    "version": "1.0",
+    "iam_policy": {
+      "Allow": [
+        "s3:GetObject",
+        "ec2:DescribeInstances"
+      ],
+      "Deny": [
+        "iam:CreateUser"
+      ]
+    },
+    "security_groups": [
+      {
+        "name": "default",
+        "inbound": [
+          "22/tcp",
+          "443/tcp"
+        ],
+        "outbound": [
+          "80/tcp"
+        ]
+      }
+    ]
+  }
+}

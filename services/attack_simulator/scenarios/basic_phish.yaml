@@ -1,0 +1,21 @@
+name: basic_phish
+victims:
+  - alice@example.com
+  - bob@example.com
+
+chain:
+  - action: PhishingClick
+    description: User clicked a malicious link
+    mitre_technique: T1566
+  - action: CredentialHarvest
+    description: Credentials harvested by attacker
+    mitre_technique: T1552
+  - action: ConsoleLogin
+    description: Console login from unusual IP
+    mitre_technique: T1078
+  - action: PrivilegeEscalation
+    description: Role privilege escalation
+    mitre_technique: T1068
+  - action: DataExfil
+    description: Data exfiltrated to external destination
+    mitre_technique: T1041

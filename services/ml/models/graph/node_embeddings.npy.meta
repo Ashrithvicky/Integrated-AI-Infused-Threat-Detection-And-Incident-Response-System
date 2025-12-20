@@ -1,0 +1,1 @@
+["PhishingClick", "bob@example.com", "CredentialHarvest", "ConsoleLogin", "PrivilegeEscalation", "DataExfil", "ThirdPartyCompromise", "alice@example.com", "SupplyChainPayload", "Deploy", "Persistence", "Exfiltration", "InitialAccess", "LateralMovement", "ProcessStart"]
