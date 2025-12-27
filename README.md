@@ -245,15 +245,12 @@ This system enables organizations to:
 
 **Security becomes an enabler, not a blocker.**
 
-Here is the **README-ready markdown section**. You can paste this block **directly into your `README.md`** without editing.
 
----
 
 ## 🚀 Project Execution Commands & Their Purpose
 
 This section explains the role of every command required to run the **Integrated AI-Infused Threat Detection and Incident Response System** end-to-end.
 
----
 
 ### 1. Activate Python Virtual Environment
 
@@ -264,7 +261,6 @@ $env:PYTHONPATH="."
 
 Initializes the isolated Python runtime containing all project dependencies and ensures the project root is available for module imports.
 
----
 
 ### 2. Start Backend Threat Processing API
 
@@ -274,7 +270,6 @@ python services\consumer\api.py
 
 Launches the core backend API responsible for ingesting events, normalizing data, enriching threat context, and publishing detections across the system.
 
----
 
 ### 3. Replay CloudTrail Logs (Threat Simulation)
 
@@ -284,7 +279,7 @@ python services/ingest/cloudtrail_replay.py examples/cloudtrail_demo_30.json 0.2
 
 Replays AWS CloudTrail logs into the system at a controlled speed to simulate real-world attacks and validate detection accuracy across all AI engines.
 
----
+
 
 ### 4. Start SOC Web Dashboard
 
@@ -296,7 +291,7 @@ npm run dev
 
 Starts the interactive Security Operations Center dashboard used for real-time alert monitoring, threat visualization, and investigation workflows.
 
----
+
 
 ### 5. Train Multi-Modal Fusion Engine
 
@@ -306,7 +301,7 @@ python services\ml\fusion\contrastive_train.py
 
 Trains the contrastive learning model that fuses UEBA, sequence intelligence, and graph correlation signals into a unified risk scoring engine.
 
----
+
 
 ### 6. Capture Initial Configuration Snapshot
 
@@ -316,7 +311,7 @@ python services\drift\config_snapshot.py
 
 Creates the baseline snapshot of cloud configuration used to detect infrastructure drift and policy violations.
 
----
+
 
 ### 7. Launch Sequence Modeling Service
 
@@ -326,7 +321,7 @@ python services\ml\sequence\serve_transformer.py
 
 Starts the transformer-based deep learning service that detects chained attack patterns and multi-stage intrusions.
 
----
+
 
 ### 8. Start Graph Correlation Engine
 
@@ -336,7 +331,7 @@ python services\graph_service\graph_api.py
 
 Runs the graph analytics service that constructs real-time relationship graphs between users, IPs, and cloud resources.
 
----
+
 
 ### 9. Start Drift Detection Engine
 
@@ -346,7 +341,7 @@ python services\drift\drift_service.py
 
 Continuously monitors configuration changes and emits drift-based security alerts and policy violation events.
 
----
+
 
 ### 10. Execute Snapshot Comparison Engine
 
@@ -356,7 +351,7 @@ python services\drift\config_drift.py
 
 Performs deep structural comparison between configuration snapshots to detect unauthorized or risky changes.
 
----
+
 
 ### 11. Evaluate UEBA Detection Accuracy
 
@@ -366,7 +361,7 @@ python scripts/eval_ueba.py
 
 Evaluates the User and Entity Behavior Analytics model for insider threat detection and anomaly classification.
 
----
+
 
 ### 12. Evaluate Sequence Attack Detection
 
@@ -376,7 +371,6 @@ python scripts/eval_sequence.py
 
 Benchmarks the transformer-based temporal detection model for identifying multi-step attack chains.
 
----
 
 ### 13. Evaluate Graph Threat Correlation
 
@@ -385,10 +379,6 @@ python scripts/eval_graph.py
 ```
 
 Measures the accuracy of the graph-based correlation engine in identifying hidden lateral movement and privilege escalation paths.
-
----
-
-This execution pipeline enables full-scale validation of the system’s **self-adaptive cyber threat interception architecture**, integrating UEBA, deep learning, graph reasoning, configuration drift detection, and automated incident response.
 
 
 
