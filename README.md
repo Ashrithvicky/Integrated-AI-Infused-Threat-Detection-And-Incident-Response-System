@@ -247,7 +247,7 @@ This system enables organizations to:
 
 
 
-## 🚀 Project Execution Commands & Their Purpose
+## Project Execution Commands & Their Purpose
 
 This section explains the role of every command required to run the **Integrated AI-Infused Threat Detection and Incident Response System** end-to-end.
 
